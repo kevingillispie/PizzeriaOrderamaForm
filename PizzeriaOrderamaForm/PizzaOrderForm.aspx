@@ -50,7 +50,7 @@
             <asp:Button ID="purchaseButton" runat="server" Text="Purchase" OnClick="purchaseButton_Click" />
         </div>
         <div>
-            <p>Total: <asp:Label ID="totalLabel" runat="server" Text=""></asp:Label></p>
+            <p>Total: <asp:Label ID="totalLabel" runat="server" Text="$0.00"></asp:Label></p>
         </div>
         <p>Sorry, at this time you can only order one pizza online (pick only) ... we need a better website :(</p>
     </form>
