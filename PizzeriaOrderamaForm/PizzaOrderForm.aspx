@@ -18,21 +18,21 @@
             <h1 class="heading"><asp:Image ID="Image1" runat="server" ImageUrl="~/cheflogo.png" />Papa Bob's Pizzeria Orderama!</h1>
         </div>
         <div class="choices">
-            <asp:RadioButton ID="babyRadioButton" runat="server" Text="Baby Bob Size (10&quot;) - $10" GroupName="PizzaSize" />
+            <asp:RadioButton ID="babyRadioButton" runat="server" Text="Baby Bob Size (10&quot;) - $10" Checked="True" GroupName="PizzaSize" />
             <br />
             <asp:RadioButton ID="mamaRadioButton" runat="server" Text="Mama Bob Size (13&quot;) - $13" GroupName="PizzaSize" />
             <br />
             <asp:RadioButton ID="papaRadioButton" runat="server" Text="Papa Bob Size (16&quot;) - $16" GroupName="PizzaSize" />
             <br />
             <br />
-            <asp:RadioButton ID="thinRadioButton" runat="server" Text="Thin Crust" GroupName="Thickness" />
+            <asp:RadioButton ID="thinRadioButton" runat="server" Text="Thin Crust" Checked="True" GroupName="Thickness" />
             <br />
             <asp:RadioButton ID="deepRadioButton" runat="server" Text="Deep Dish (+$2)" GroupName="Thickness" />
             <br />
             <br />
-            <asp:CheckBox ID="pepperoni" runat="server" OnCheckedChanged="CheckBox1_CheckedChanged" Text="Pepperoni (+1.50)" />
+            <asp:CheckBox ID="pepperoni" runat="server" Text="Pepperoni (+1.50)" />
             <br />
-            <asp:CheckBox ID="onions" runat="server" OnCheckedChanged="CheckBox2_CheckedChanged" Text="Onions (+$0.75)" />
+            <asp:CheckBox ID="onions" runat="server" Text="Onions (+$0.75)" />
             <br />
             <asp:CheckBox ID="greenPeppers" runat="server" Text="Green Peppers (+$0.50)" />
             <br />
@@ -47,7 +47,7 @@
             <p>Save $2.00 when you add EITHER pepperoni, green peppers, and anchovies OR pepperoni, red peppers, and anchovies.</p>
         </div>
         <div>
-            <asp:Button ID="purchaseButton" runat="server" Text="Purchase" />
+            <asp:Button ID="purchaseButton" runat="server" Text="Purchase" OnClick="purchaseButton_Click" />
         </div>
         <div>
             <p>Total: <asp:Label ID="totalLabel" runat="server" Text=""></asp:Label></p>
